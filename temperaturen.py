@@ -11,7 +11,6 @@ def celsius_to_fahrenheit(celsius):
     
     temp_fahr = (celsius * 9/5) + 32
     print(f"{celsius:.2f}°C entspricht {temp_fahr:.2f}°F")
-    
     return(temp_fahr)
 
 
@@ -34,11 +33,11 @@ def fahrenheit_to_celsius(fahrenheit):
 def ist_warm(temperatur, einheit="celsius"): 
     
     # Args:
-    #     Die Temperatur als Zahlenwert
-    #     Die Einheit: "celsius" oder "fahrenheit"
+    #     temperatur: Die Temperatur als Zahlenwert
+    #     einheit: "celsius" oder "fahrenheit" (Standard: celsius)
         
     # Returns:
-    #     True wenn Temperatur warm, ansonsten False
+    #     True wenn Temperatur warm (>20°C), sonst False
     
     # Ist die Einheit in Fahrenheit, soll sie zu Celsius umgewandelt werden.
     if einheit == "fahrenheit":
@@ -48,16 +47,13 @@ def ist_warm(temperatur, einheit="celsius"):
     
     # Ist die Temperatur zu hoch, oder unterhalb der Grenze?
     if temperatur_celsius > 20:
-        
-        print(f"{temperatur_celsius:.2f}°C ist warm. Ich brauch Wasser.")
+        print(f"{temperatur_celsius:.2f}°C ist warm. Ich brauch Wasser!")
         return True
     
-    elif temperatur_celsius < 20 and temperatur_celsius > 0:
-        
+    elif temperatur_celsius >= 0:  # Alles zwischen 0 und 20 (inklusive 20)
         print(f"{temperatur_celsius:.2f}°C ist nicht warm. Kein Wasser nötig.")
         return False
     
-    elif temperatur_celsius < 0:
-        
+    else:  # temperatur_celsius < 0
         print(f"{temperatur_celsius:.2f}°C ist kalt. Brrrrr!")
         return False
