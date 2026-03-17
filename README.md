@@ -2,6 +2,8 @@
 
 Dies ist ein einfaches Python-Projekt im Rahmen des 1. Homework Assignments zur VU Open Source Energy System Modeling. 
 
+Dieses Projekt ist Open Source unter der MIT Lizenz [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 ## Beschreibung des Projekts
 
 Dieses Projekt enthält drei Funktionen zur Temperaturumrechnung und -bewertung:
