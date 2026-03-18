@@ -1,17 +1,19 @@
-import sys, argparse
+import argparse
+import sys
 
 from src.temperaturen.temperaturen import (
     celsius_to_fahrenheit,
     fahrenheit_to_celsius,
-    ist_warm
+    ist_warm,
 )
+
 
 def main():
     parser = argparse.ArgumentParser(description='Temperatur Umrechnungen')
     parser.add_argument('wert', type=float, help='Temperaturwert')
     parser.add_argument('--von', choices=['c', 'f'], default='c',
                        help='Einheit: c (Celsius) oder f (Fahrenheit)')
-    parser.add_argument('--operation', choices=['to_f', 'to_c', 'warm'], 
+    parser.add_argument('--operation', choices=['to_f', 'to_c', 'warm'],
                        default='to_f', help='Operation')
 
     args = parser.parse_args()
