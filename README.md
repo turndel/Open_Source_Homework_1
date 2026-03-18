@@ -27,19 +27,19 @@ Prüft, ob eine Temperatur (Input) über 20°C liegt.
 - **Output:** Boolean (True wenn warm, False wenn nicht warm)
 - **Beispiel:** "ist_warm(25)" → "True", "ist_warm(15)" → "False"
 
-## Installation
-# 1. Repository klonen
+# Installation
+## 1. Repository klonen
 git clone https://github.com/turndel/Open_Source_Homework_1.git
 cd Open_Source_Homework_1
 
-# 2. Virtuelle Umgebung erstellen
+## 2. Virtuelle Umgebung erstellen
 python3 -m venv .venv
 source .venv/bin/activate  # Auf macOS/Linux
 
-# 3. Requirements installieren
+## 3. Requirements installieren
 pip install -r requirements.txt
 
-# 4. Projekt im Entwicklermodus installieren
+## 4. Projekt im Entwicklermodus installieren
 pip install -e .
 
 ## Verwendung über Kommandozeile
@@ -64,4 +64,4 @@ bash
 cd /Ihr-Pfad-zum-Ordner/Open_Source_Homework_1
 source .venv/bin/activate
 
-Als Hilfswerkzeug zur Entwicklung dieses Projekts, sowie zum Verständnis, wurde KI verwendet.
+#### Als Hilfswerkzeug zur Entwicklung dieses Projekts, sowie zum Verständnis, wurde KI verwendet.
