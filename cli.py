@@ -1,5 +1,4 @@
-import argparse
-import sys
+import argparse, sys
 
 from src.temperaturen.temperaturen import (
     celsius_to_fahrenheit,
@@ -35,9 +34,9 @@ def main():
     elif args.operation == 'warm':
         einheit = 'celsius' if args.von == 'c' else 'fahrenheit'
         if ist_warm(args.wert, einheit):
-            print(f"{args.wert}°{args.von.upper()} ist warm!")
+            print(f"Folglich: {args.wert}°{args.von.upper()} ist warm!")
         else:
-            print(f"{args.wert}°{args.von.upper()} ist nicht warm.")
+            print(f"Folglich: {args.wert}°{args.von.upper()} ist nicht warm.")
 
 if __name__ == "__main__":
     main()
