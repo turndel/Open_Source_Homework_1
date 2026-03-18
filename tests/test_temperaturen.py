@@ -19,15 +19,12 @@ def test_celsius_to_fahrenheit():
     assert celsius_to_fahrenheit(100) == 212
     assert round(celsius_to_fahrenheit(20), 2) == 68.00
 
-
 def test_fahrenheit_to_celsius():
 
     """ Testet die Fahrenheit->Celsius Umrechnung. """
     assert fahrenheit_to_celsius(32) == 0
     assert fahrenheit_to_celsius(212) == 100
     assert round(fahrenheit_to_celsius(68), 2) == 20.00
-
-
 
 def test_ist_warm():
     
