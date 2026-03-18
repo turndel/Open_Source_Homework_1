@@ -59,10 +59,10 @@ python cli.py 25 --operation warm
 python cli.py 70 --von f --operation warm
 
 ### Voraussetzung
-Stellen Sie sicher, dass du dich im Projektverzeichnis befindest und die virtuelle Umgebung aktiviert ist:
-bash
+Stellen Sie sicher, dass Sie sich im Projektverzeichnis befinden und die virtuelle Umgebung aktiviert ist:
+Im Terminal:
 cd /Ihr-Pfad-zum-Ordner/Open_Source_Homework_1
 source .venv/bin/activate
 
-### Anmerkungen
+# Anmerkungen
 #### Als Hilfswerkzeug zur Entwicklung dieses Projekts, sowie zum Verständnis, wurde KI verwendet.
