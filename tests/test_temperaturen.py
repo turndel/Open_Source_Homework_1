@@ -1,15 +1,17 @@
 # Test-Code zur Überprüfung des Codes
-import sys, os
+import os
+import sys
 
 # Füge den Hauptordner zum Python-Pfad hinzu
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Jetzt kann importiert werden
 from src.temperaturen.temperaturen import (
-    celsius_to_fahrenheit, 
+    celsius_to_fahrenheit,
     fahrenheit_to_celsius,
-    ist_warm
+    ist_warm,
 )
+
 
 # Testen der jeweiligen Funktionen
 def test_celsius_to_fahrenheit():
@@ -27,11 +29,11 @@ def test_fahrenheit_to_celsius():
     assert round(fahrenheit_to_celsius(68), 2) == 20.00
 
 def test_ist_warm():
-    
+
     """ Testet die Warm-Erkennung. """
-    assert ist_warm(25) == True   # Warm
-    assert ist_warm(20) == False  # Grenze: nicht warm
-    
-    assert ist_warm(15) == False  # Nicht warm
-    assert ist_warm(-5) == False  # Kalt
-    assert ist_warm(70, "fahrenheit") == True  # Warm in Fahrenheit
+    assert ist_warm(25) is True   # Warm
+    assert ist_warm(20) is False  # Grenze: nicht warm
+
+    assert ist_warm(15) is False  # Nicht warm
+    assert ist_warm(-5) is False  # Kalt
+    assert ist_warm(70, "fahrenheit") is True  # Warm in Fahrenheit
