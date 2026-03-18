@@ -21,7 +21,6 @@ def fahrenheit_to_celsius(fahrenheit):
 
     temp_cels = (fahrenheit - 32) * 5/9
     print(f"{fahrenheit:.2f}°F entspricht {temp_cels:.2f}°C")
-
     return(temp_cels)
 
 
