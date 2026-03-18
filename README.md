@@ -29,12 +29,12 @@ Prüft, ob eine Temperatur (Input) über 20°C liegt.
 
 # Installation
 ## 1. Repository klonen
-Im Terminal den Pfad zum Ordner eingeben, danach: git clone https://github.com/turndel/Open_Source_Homework_1.git 
+Im Terminal den Pfad zum Ordner eingeben, danach: git clone https://github.com/turndel/Open_Source_Homework_1.git [Name des Ordners]
 
 ## 2. Virtuelle Umgebung erstellen
 Im Terminal: 
-1. python3 -m venv .venv 
-2. source .venv/bin/activate  # Auf macOS/Linux
+1. python -m venv .venv 
+2. source .venv/bin/activate  (Auf macOS/Linux)
 
 ## 3. Requirements installieren
 pip install -r requirements.txt
@@ -60,9 +60,9 @@ python cli.py 70 --von f --operation warm
 
 ### Voraussetzung
 Stellen Sie sicher, dass Sie sich im Projektverzeichnis befinden und die virtuelle Umgebung aktiviert ist:
-Im Terminal:
-cd /Ihr-Pfad-zum-Ordner/Open_Source_Homework_1
-source .venv/bin/activate
+Im Terminal: 
+- cd /Ihr-Pfad-zum-Ordner/Open_Source_Homework_1
+- source .venv/bin/activate
 
 # Anmerkungen
 #### Als Hilfswerkzeug zur Entwicklung dieses Projekts, sowie zum Verständnis, wurde KI verwendet.
