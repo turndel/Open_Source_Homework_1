@@ -1,4 +1,5 @@
-import argparse, sys
+import argparse
+import sys
 
 from src.temperaturen.temperaturen import (
     celsius_to_fahrenheit,
