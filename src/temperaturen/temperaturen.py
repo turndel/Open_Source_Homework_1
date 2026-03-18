@@ -4,10 +4,8 @@
 def celsius_to_fahrenheit(celsius):
 
     # Args:
-    #     Celsius: Temperatur in Celsius
-    
-    # Return:
-    #     Temperatur in Fahrenheit
+    # Celsius: Temperatur in Celsius
+    # Returns: Temperatur in Fahrenheit
 
     temp_fahr = (celsius * 9/5) + 32
     print(f"{celsius:.2f}°C entspricht {temp_fahr:.2f}°F")
@@ -18,10 +16,8 @@ def celsius_to_fahrenheit(celsius):
 def fahrenheit_to_celsius(fahrenheit):
 
     # Args:
-    #     Fahrenheit: Temperatur in Fahrenheit
-    
-    # Returns:
-    #     Temperatur in Celsius
+    # Fahrenheit: Temperatur in Fahrenheit
+    # Returns: Temperatur in Celsius
 
     temp_cels = (fahrenheit - 32) * 5/9
     print(f"{fahrenheit:.2f}°F entspricht {temp_cels:.2f}°C")
@@ -33,11 +29,10 @@ def fahrenheit_to_celsius(fahrenheit):
 def ist_warm(temperatur, einheit="celsius"):
 
     # Args:
-    #     temperatur: Die Temperatur als Zahlenwert
-    #     einheit: "celsius" oder "fahrenheit" (Standard: celsius)
-    
+    # temperatur: Die Temperatur als Zahlenwert
+    # einheit: "celsius" oder "fahrenheit" (Standard: celsius)
     # Returns:
-    #     True wenn Temperatur warm (>20°C), sonst False
+    # True wenn Temperatur warm (>20°C), sonst False
 
     # Ist die Einheit in Fahrenheit, soll sie zu Celsius umgewandelt werden.
     if einheit == "fahrenheit":
