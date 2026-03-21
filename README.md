@@ -32,20 +32,22 @@ Prüft, ob eine Temperatur (Input) über 20°C liegt.
 Im Terminal den Pfad zum Ordner eingeben, danach: git clone https://github.com/turndel/Open_Source_Homework_1.git [Name des Ordners]
 
 ## 2. Virtuelle Umgebung erstellen
-Im Terminal: 
+Terminal öffnen und folgende Commands eingeben: 
 1. python -m venv .venv 
-2. source .venv/bin/activate  (Auf macOS/Linux)
-
+2. - source .venv/bin/activate  (Auf macOS/Linux)
+   - .venv\Scripts\activate.bat (für Windows CMD)
+   - .venv\Scripts\Activate.ps1 (für Windows PowerShell)
+  
 ## 3. Requirements installieren
 pip install -r requirements.txt
 
 ## 4. Projekt im Entwicklermodus installieren
 pip install -e .
 
-## Verwendung über Kommandozeile
-Das Projekt enthält ein Kommandozeilen-Interface (`cli.py`) für schnelle Berechnungen direkt im Terminal.
+## Verwendung über Terminal (Kommandozeile)
+Das Projekt enthält ein Kommandozeile-Interface (`cli.py`) für schnelle Berechnungen direkt im Terminal.
 
-Über Terminal sieht es so aus:
+Über Terminal sieht es dann so aus:
 ### Celsius zu Fahrenheit
 python cli.py 25 --von c --operation to_f
 
@@ -58,11 +60,11 @@ python cli.py 25 --operation warm
 ### Prüfen ob warm (Fahrenheit)
 python cli.py 70 --von f --operation warm
 
-### Voraussetzung
+### Voraussetzung, Hinweis
 Stellen Sie sicher, dass Sie sich im Projektverzeichnis befinden und die virtuelle Umgebung aktiviert ist:
 Im Terminal: 
 - cd /Ihr-Pfad-zum-Ordner/Open_Source_Homework_1
-- source .venv/bin/activate
+- source .venv/bin/activate (...)
 
 # Anmerkungen
 #### Als Hilfswerkzeug zur Entwicklung dieses Projekts, sowie zum Verständnis, wurde KI verwendet.
