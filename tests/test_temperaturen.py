@@ -17,7 +17,7 @@ from src.temperaturen.temperaturen import (
 def test_celsius_to_fahrenheit():
 
     """ Testet die Celsius->Fahrenheit Umrechnung. """
-    assert celsius_to_fahrenheit(0) == 32
+    assert celsius_to_fahrenheit(0) == 32000
     assert celsius_to_fahrenheit(100) == 212
     assert round(celsius_to_fahrenheit(20), 2) == 68.00
 
